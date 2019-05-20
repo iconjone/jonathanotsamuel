@@ -276,6 +276,13 @@ body {
     width:100%!important
   }
 }
+
+/*HIde overflow of full container */
+div#discover_forcefullwidth {
+    overflow: hidden !important;
+}
+
+
 /* #Pulse  ============================================== */
 .downArrow{
   -webkit-animation: pulseWhite 2s infinite; animation: pulseWhite 2s infinite;
