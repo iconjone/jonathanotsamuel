@@ -1117,7 +1117,7 @@
 
               <!-- Copyright -->
               <div class="left">
-                <a class="footer2-copy" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" target="_blank">&copy; elementy</a>
+                <a class="footer2-copy" href="http://jonathanotsamuel" target="_blank">&copy; Jonathan Samuel</a>
               </div>
 
             </div>
@@ -1142,54 +1142,7 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Waypoint -->
   <script src="js/jquery.waypoints.min.js"></script>
-  <script type="text/javascript">
-  window.onload = function () {
-    function clearCurrent(){
-nav = document.getElementsByClassName('navbar-nav')[0]
-arr= nav.children;
-arr = Object.entries(arr)
-arr.forEach(function(element){
-    element[1].classList.remove("current")
-})
-    }
-    function setCurrent(hrefRef){
-nav = document.getElementsByClassName('navbar-nav')[0]
-arr= nav.children;
-arr = Object.entries(arr)
-  hrefRef = "#" + hrefRef
-arr.forEach(function(element){
-    if(element[1].getAttribute("href") === hrefRef){
-      element[1].classList.add("current")
-      console.log("reached")
-    }
-})
-    }
-    prev = null;
-    wayPointArrs = []
-    arrOfElementsIds = ['discover_wrapper', 'home', 'rev_slider_202_1', 'rev_slider_202_1_forcefullwidth', 'homeHeader', 'menu-btn' ,'sliderUL', 'mmhome', 'rev_slider_632_1_wrapper']
-    arrOfElementsIds.forEach(function(eleID){
-    var waypoint = new Waypoint({
-    element: document.getElementById(eleID),
-    handler: function(direction) {
-
-
-        if(eleID==='mmhome' || eleID==='sliderUL')
-        eleID = 'home'
-        prev = eleID;
-          console.log(eleID)
-      clearCurrent();
-      setCurrent(eleID)
-
-   }
-
- })
- wayPointArrs.push(waypoint)
-})
-// $('div').waypoint(function(direction){
-//   console.log(this.element)
-// })
-}
-  </script>
+  <script src="js/navActiveWP.js">  </script>
 
 		<!-- MAGNIFIC POPUP -->
 		<script src='js/jquery.magnific-popup.min.js'></script>
