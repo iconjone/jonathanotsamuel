@@ -46,4 +46,4 @@ window.onload = function() {
 function resetwp(){
   Waypoint.refreshAll();
 }
-window.setTimeout(resetwp, 200);
+window.setTimeout(resetwp, 500);
